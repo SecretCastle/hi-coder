@@ -1,0 +1,26 @@
+{
+    "": [
+        "readme.md", 
+        "vsc-extension-quickstart.md", 
+        "changelog.md", 
+        "node_modules", 
+        "out", 
+        "src"
+    ], 
+    "__positions": {
+        "src": 6, 
+        "changelog.md": 3, 
+        "node_modules": 4, 
+        "vsc-extension-quickstart.md": 2, 
+        "readme.md": 1, 
+        "out": 5
+    }, 
+    "__raw_positions": {
+        "src": 6, 
+        "changelog.md": 3, 
+        "node_modules": 4, 
+        "vsc-extension-quickstart.md": 2, 
+        "readme.md": 1, 
+        "out": 5
+    }
+}
