@@ -1,0 +1,54 @@
+{
+	"name": "hi-coder",
+	"displayName": "hi-coder",
+	"description": "An extension which support notificate(e.g weather...) when vscode open",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "hi-coder配置",
+			"properties": {
+				"HiCoder.city": {
+					"type": "string",
+					"default": "合肥",
+					"description": "你所在的城市"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "extension.sayHello",
+				"title": "Hello World Coder"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"@types/request": "^2.48.1",
+		"@types/request-promise": "^4.1.44",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {}
+}
